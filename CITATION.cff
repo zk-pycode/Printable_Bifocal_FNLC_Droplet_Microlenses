@@ -9,12 +9,12 @@ message: >-
   metadata from this file.
 type: software-code
 authors:
-  - given-names: Manisha
-    family-names: Talwar
   - given-names: Zakaria
     family-names: Siddiquee
     email: zsiddiq3@kent.edu
     orcid: 'https://orcid.org/0009-0005-5845-9484'
+  - given-names: Manisha
+    family-names: Talwar
   - given-names: Antal
     family-names: Jákli
 repository-code: >-
