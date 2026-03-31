@@ -39,7 +39,7 @@ JonesMatrix_POM/
 ```
 
 ### Output (written inside the simulation directory)
-"""
+```bash ...
 <simulation_dir>/POM_output/
 ├── POM_images/
 │   ├── frame_000.png     	POM frame at polarizer angle 0°
@@ -50,7 +50,7 @@ JonesMatrix_POM/
     ├── height_contour_map.png      	Droplet height profile with contours
     ├── thickness_profile_colored.png   Radial profile colored by retardation
     └── layer_NN_zXX.Xum.png        	Director field at z-slice NN  (if n_debug_layers > 0)
-"""
+```
 ---
 
 ## Quick start
