@@ -1,38 +1,41 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
 cff-version: 1.2.0
-message: "If you use this code, please cite it as below."
+title: >-
+  Printable_Bifocal_Microlenses_from_Ferroelectric_Nematic_Liquid_Crystal_Droplets
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
 authors:
-- family-names: "Talwar"
-  given-names: "Manisha"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: "Siddiquee"
-  given-names: "Zakaria"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: "Jákli"
-  given-names: "Antal"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-title: "My Research Software"
-version: 2.0.4
-doi: 10.0000/zenodo.0000
-date-released: 2017-12-18
-url: "https://github.com/zk-pycode/Printable_Bifocal_Microlenses_from_Ferroelectric_Nematic_Liquid_Crystal_Droplets"
-preferred-citation:
-  type: article
-  authors:
-  - family-names: "Talwar"
-    given-names: "Manisha"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
-  - family-names: "Siddiquee"
-    given-names: "Zakaria"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
-  - family-names: "Jákli"
-    given-names: "Antal"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
-  doi: "10.0000/00000"
-  journal: "Journal Title"
-  month: 9
-  start: 1 # First page number
-  end: 10 # Last page number
-  title: "Printable Bifocal Microlenses from Ferroelectric Nematic Liquid Crystal Droplets"
-  issue: 1
-  volume: 1
-  year: 2026
+  - given-names: Manisha
+    family-names: Talwar
+  - given-names: Zakaria
+    family-names: Siddiquee
+    email: zsiddiq3@kent.edu
+    orcid: 'https://orcid.org/0009-0005-5845-9484'
+  - given-names: Antal
+    family-names: Jákli
+repository-code: >-
+  https://github.com/zk-pycode/Printable_Bifocal_Microlenses_from_Ferroelectric_Nematic_Liquid_Crystal_Droplets
+abstract: >-
+  Multifocal lenses are essential for enhancing stereoscopic
+  image display and increasing depth of field in optical
+  devices. Traditional liquid crystal lenses face challenges
+  in achieving planar alignment at both interfaces, limiting
+  their use for multifocal lenses. Here we demonstrate
+  printable bifocal microlens arrays formed by submillimeter
+  plano-convex droplets of ferroelectric nematic liquid
+  crystals deposited on rubbed polymer-coated glass
+  substrates promoting uniform planar alignment. These
+  droplets exhibit two polarization-dependent focal lengths
+  corresponding to the extraordinary and ordinary refractive
+  indices of the material. Computer simulations corroborate
+  the observed director structures and optical behaviors
+  across nematic, antiferroelectric smectic, and
+  ferroelectric nematic phases. Our findings reveal a
+  straightforward method for self-assembled bifocal lenses,
+  offering potential applications in autostereoscopic
+  displays and devices requiring enhanced depth of field
+  without complex fabrication processes.
