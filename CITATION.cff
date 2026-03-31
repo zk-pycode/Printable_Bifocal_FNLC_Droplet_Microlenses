@@ -3,7 +3,7 @@
 
 cff-version: 1.2.0
 title: >-
-  Printable_Bifocal_Microlenses_from_Ferroelectric_Nematic_Liquid_Crystal_Droplets
+  Printable Bifocal FNLC Droplet Microlenses
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
@@ -18,24 +18,4 @@ authors:
   - given-names: Antal
     family-names: Jákli
 repository-code: >-
-  https://github.com/zk-pycode/Printable_Bifocal_Microlenses_from_Ferroelectric_Nematic_Liquid_Crystal_Droplets
-abstract: >-
-  Multifocal lenses are essential for enhancing stereoscopic
-  image display and increasing depth of field in optical
-  devices. Traditional liquid crystal lenses face challenges
-  in achieving planar alignment at both interfaces, limiting
-  their use for multifocal lenses. Here we demonstrate
-  printable bifocal microlens arrays formed by submillimeter
-  plano-convex droplets of ferroelectric nematic liquid
-  crystals deposited on rubbed polymer-coated glass
-  substrates promoting uniform planar alignment. These
-  droplets exhibit two polarization-dependent focal lengths
-  corresponding to the extraordinary and ordinary refractive
-  indices of the material. Computer simulations corroborate
-  the observed director structures and optical behaviors
-  across nematic, antiferroelectric smectic, and
-  ferroelectric nematic phases. Our findings reveal a
-  straightforward method for self-assembled bifocal lenses,
-  offering potential applications in autostereoscopic
-  displays and devices requiring enhanced depth of field
-  without complex fabrication processes.
+  https://github.com/zk-pycode/Printable_Bifocal_FNLC_Droplet_Microlenses
