@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite it as below."
-  type: article
-  authors:
+type: article
+authors:
   - given-names: Manisha
     family-names: Talwar
   - given-names: Zakaria
@@ -10,15 +10,15 @@ message: "If you use this code, please cite it as below."
     orcid: 'https://orcid.org/0009-0005-5845-9484'
   - given-names: Antal
     family-names: Jákli
-  doi: "10.----/acsami.----"
-  journal: "ACS Appl. Mater. & Interfaces"
-  month: 5
-  title: "Printable Bifocal Microlenses from Ferroelectric Nematic Liquid Crystal Droplets"
-  year: 2026
+doi: "10.----/acsami.----"
+journal: "ACS Appl. Mater. & Interfaces"
+month: 5
+title: "Printable Bifocal Microlenses from Ferroelectric Nematic Liquid Crystal Droplets"
+year: 2026
 
 # Add a second citation (e.g., for a published paper)
 preferred-citation:
-authors:
+  authors:
   - given-names: Zakaria
     family-names: Siddiquee
     email: zsiddiq3@kent.edu
@@ -29,8 +29,8 @@ authors:
     family-names: Selinger
   - given-names: Antal
     family-names: Jákli
-title: "Your Software Name"
-version: 2.0.4
-doi: 10.0000/zenodo.----
-date-released: 2000-00-00
-url: "https://github.com/zk-pycode/Printable_Bifocal_FNLC_Droplet_Microlenses"
+  title: "Your Software Name"
+  version: 2.0.4
+  doi: 10.0000/zenodo.----
+  date-released: 2000-00-00
+  url: "https://github.com/zk-pycode/Printable_Bifocal_FNLC_Droplet_Microlenses"
