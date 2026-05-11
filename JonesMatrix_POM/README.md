@@ -1,4 +1,4 @@
-## JonesMatrix_POM
+## POM_JM
 Polarized Optical Microscopy (POM) image generator using layer-by-layer
 Jones matrix calculus on a 3-D liquid-crystal director field from a
 FEniCSx/DOLFINx finite-element simulation.
@@ -22,7 +22,7 @@ FEniCSx/DOLFINx finite-element simulation.
 
 ## Project structure
 ```bash ...
-JonesMatrix_POM/
+POM_JM/
 ├── main_JPOM.py          	Entry point — instantiates params, calls pipeline
 ├── params_JPOM.py        	All user-configurable settings (edit this file)
 ├── README.md             	This file
