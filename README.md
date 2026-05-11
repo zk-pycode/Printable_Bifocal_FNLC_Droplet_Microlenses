@@ -18,15 +18,8 @@ The simulated steady-state director textures from each phase are converted to sy
 
 ### References
 
-#### Journal Article
 ```
 TBA
-```
 
-#### Software
-```
-Z. Siddiquee, M. Talwar, J. Selinger, and A. Jákli,
-*Printable Bifocal FNLC Droplet Microlenses* (Version 2.0.4), 2026.
-Zenodo. DOI: [10.0000/zenodo.----](https://doi.org/10.0000/zenodo.----)
-URL: https://github.com/zk-pycode/Printable_Bifocal_FNLC_Droplet_Microlenses
+Z. Siddiquee, J. Selinger, and A. Jákli (2026). FNLC_Bifocal_Microlenses. Zenodo. https://doi.org/10.----/zenodo.----.
 ```
