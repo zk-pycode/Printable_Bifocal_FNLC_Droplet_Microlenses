@@ -1,10 +1,3 @@
-## JM_POM
-Polarized Optical Microscopy (POM) image generator using layer-by-layer
-Jones matrix calculus on a 3-D liquid-crystal director field from a
-FEniCSx/DOLFINx finite-element simulation.
-
----
-
 ## How it works
 1. Reads a DOLFINx HDF5 checkpoint (simulation_P.h5) containing mesh
    coordinates and a 3-component director (or polarization) field.
