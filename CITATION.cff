@@ -1,13 +1,16 @@
-cff-version: 1.1.0
-message: "If you use this software, please cite it as below."
-authors:
-- family-names: Zakaria
-  given-names: Siddiquee
-- family-names: Jonathan
-  given-names: Selinger
-- family-names: Antal
-  given-names: Jákli 
-orcid: https://orcid.org/0009-0005-5845-9484
-title: FNLC Bifocal Microlenses
-version: v.1.0.0
-date-released: "2026-05-11"
+  cff-version: 1.2.0
+  message: "If you use this software, please cite it as below."
+  authors:
+    - given-names: Zakaria
+      family-names: Siddiquee
+      email: zsiddiq3@kent.edu
+      orcid: "https://orcid.org/0009-0005-5845-9484"
+    - given-names: Jonathan
+      family-names: Selinger
+    - given-names: Antal
+      family-names: Jákli
+  title: "FNLC Bifocal Microlenses"
+  version: "1.0.0"
+  date-released: "2026-05-11"
+  url: "https://github.com/zk-pycode/FNLC_Bifocal_Microlenses"
+  license: MIT
