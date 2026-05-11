@@ -21,5 +21,4 @@ The simulated steady-state director textures from each phase are converted to sy
 ```
 TBA
 
-Z. Siddiquee, J. Selinger, and A. Jákli (2026). FNLC_Bifocal_Microlenses. Zenodo. https://doi.org/10.----/zenodo.----.
 ```
