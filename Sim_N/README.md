@@ -14,7 +14,7 @@ Sim_N/
     ├── __init__.py
     ├── solver.py               GinzburgLandauSolver (weak form, BDF1/BDF2 time stepping, energy logging)
     │                           run_simulation (full pipeline orchestration)
-    ├── meshing.py              MeshHandler (spherical-cap tet mesh via gmsh + prism->tet decomposition)
+    ├── meshing.py              MeshHandler (spherical-cap tet mesh via gmsh + prism tet decomposition)
     │                           FunctionSpaces (5-component CG1 Q-tensor space)
     ├── initial_conditions.py   InitialConditions (random, radial, or loaded from a previous file)
     ├── boundary_conditions.py  BoundaryConditions (hard Dirichlet BCs at the dome rim)
