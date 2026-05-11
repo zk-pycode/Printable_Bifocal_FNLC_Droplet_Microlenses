@@ -66,7 +66,7 @@ The code requires **DOLFINx v0.9.0** (FEniCSx) with PETSc compiled with MUMPS su
 | `h5py` | 3.15.1 | Reading previous simulation files (`from_file` IC) |
 | `progiter` | 2.0.0 | Progress reporting |
 
-#### Installing DOLFINx
+### Installing DOLFINx
 
 Detailed installation instructions for DOLFINx can be found at [FEniCS/dolfinx](https://github.com/FEniCS/dolfinx). The recommended approach on Linux is via conda.
 
