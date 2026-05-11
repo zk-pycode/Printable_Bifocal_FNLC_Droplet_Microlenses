@@ -19,6 +19,7 @@ The simulated steady-state director textures from each phase are converted to sy
 ### References
 
 ```
-TBA
+Siddiquee, Z., & Jákli, A. (2026). FNLC Bifocal Microlenses. In ACS Applied Materials & Interfaces (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20127570
 
+TBA
 ```
