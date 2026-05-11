@@ -1,12 +1,12 @@
-#  Q-tensor Ginzburg-Landau Based Nematic Liquid Crystal Droplet Simulation 
+#  Ginzburg-Landau Q-tensor Based Nematic Liquid Crystal Droplet Simulation 
 
 ## Introduction
 
-This code simulates the orientational dynamics of a nematic liquid crystal (LC) confined inside a spherical-cap droplet sitting on a substrate. The director field is evolved (free energy minimization) using the Q-tensor Ginzburg-Landau model, discretised with a mixed finite element method on a tetrahedral mesh of the droplet volume. The simulation accounts for three Frank elastic constants (splay, twist, bend) mapped to the LdG framework, planar degenerate anchoring at the dome surface, and Rapini-Papoular anchoring at the polyamide substrate.
+This code simulates the orientational dynamics of a nematic liquid crystal (LC) confined inside a spherical-cap droplet sitting on a substrate. The director field is evolved (free energy minimization) using the Q-tensor, discretised with a mixed finite element method on a tetrahedral mesh of the droplet volume. The simulation accounts for three Frank elastic constants (splay, twist, bend) mapped to the LdG framework, planar degenerate anchoring at the dome surface, and Rapini-Papoular anchoring at the polyamide substrate.
 
 ## Code Overview
 ```bash
-N_LC2/
+Sim_N/
 ├── main_N.py                   Entry point - loads parameters and calls run_simulation
 ├── params_N.py                 All tunable settings (edit this file)
 ├── README.md                   This file
