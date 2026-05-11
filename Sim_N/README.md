@@ -106,4 +106,4 @@ To visualise the director field in ParaView, open `simulation_n.xdmf` and apply 
 
 ## Support
 
-For questions about this code, please contact the authors of the publication.
+For technical questions regarding this implementation, please refer to the associated publication or contact the corresponding authors.
