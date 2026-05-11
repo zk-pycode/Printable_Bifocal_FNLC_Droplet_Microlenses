@@ -2,7 +2,7 @@
 
 ### Project Description
 
-This project models the equilibrium director configurations of liquid crystal (LC) droplets across three material phases — **nematic (N)**, **smectic-Z_A (SmZ_A)**, and **ferroelectric nematic (FN)** — each implemented as a separate finite-element simulation module.
+This project models the equilibrium director configurations of liquid crystal (LC) droplets across three material phases — **Nematic (N)**, **Intermediate-Phase (Nx or SmZa)**, and **Ferroelectric Nematic (FN)** — each implemented as a separate finite-element simulation module.
 
 In all three phases the director field is obtained by minimizing the Landau-de Gennes (LdG) free energy functional via Ginzburg-Landau relaxation on a spherical-cap tetrahedral mesh, subject to surface anchoring conditions at the dome and polyamide substrate. The three phases differ in the structure of the free energy and the governing equations:
 ```
