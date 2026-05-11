@@ -1,8 +1,8 @@
-# Nematic Liquid Crystal Droplet Simulation (Q-tensor Ginzburg-Landau)
+#  Q-tensor Ginzburg-Landau Based Nematic Liquid Crystal Droplet Simulation 
 
 ## Introduction
 
-This code simulates the orientational dynamics of a nematic liquid crystal (LC) confined inside a spherical-cap droplet sitting on a substrate. The director field is evolved using the Q-tensor Ginzburg-Landau model, discretised with a mixed finite element method on a tetrahedral mesh of the droplet volume. The simulation accounts for three Frank elastic constants (splay, twist, bend) mapped to the LdG framework, planar degenerate anchoring at the dome surface, and Rapini-Papoular anchoring at the polyamide substrate.
+This code simulates the orientational dynamics of a nematic liquid crystal (LC) confined inside a spherical-cap droplet sitting on a substrate. The director field is evolved (free energy minimization) using the Q-tensor Ginzburg-Landau model, discretised with a mixed finite element method on a tetrahedral mesh of the droplet volume. The simulation accounts for three Frank elastic constants (splay, twist, bend) mapped to the LdG framework, planar degenerate anchoring at the dome surface, and Rapini-Papoular anchoring at the polyamide substrate.
 
 ## Code Overview
 
@@ -31,17 +31,14 @@ with the free energy functional
 F = integral_volume [
         L1/2 * |grad(Q)|**2
       + L2/2 * |div(Q)|**2
-      + L3/2 * Q[i,j,k] * Q[i,k,j]
-    ] dV
+      + L3/2 * Q[i,j,k] * Q[i,k,j]] dV
 
   + integral_dome [
-        C_surface/2 * (nu.T @ Q @ nu + S/3)**2
-    ] dS
+        C_surface/2 * (nu.T @ Q @ nu + S/3)**2] dS
 
   + integral_base [
-        C_polyamide/2 * |Q - Q_s|**2          # Rapini-Papoular toward rubbing axis
-      + C_surface/2  * (z.T @ Q @ z + S/3)**2 # planar degenerate (tilt suppression)
-    ] dS
+        C_polyamide/2 * |Q - Q_s|**2
+      + C_surface/2  * (z.T @ Q @ z + S/3)**2] dS
 ```
 
 The elastic constants L1, L2, L3 are derived from the measured Frank constants K1 (splay), K2 (twist), K3 (bend) via the standard LdG–Frank mapping at scalar order parameter S.
