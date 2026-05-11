@@ -23,14 +23,12 @@ preferred-citation:
     family-names: Siddiquee
     email: zsiddiq3@kent.edu
     orcid: 'https://orcid.org/0009-0005-5845-9484'
-  - given-names: Manisha
-    family-names: Talwar
   - given-names: Jonathan
     family-names: Selinger
   - given-names: Antal
     family-names: Jákli
-  title: "Your Software Name"
+  title: "FNLC_Bifocal_Microlenses"
   version: 2.0.4
-  doi: 10.0000/zenodo.----
+  doi: 10.----/zenodo.----
   date-released: 2000-00-00
-  url: "https://github.com/zk-pycode/Printable_Bifocal_FNLC_Droplet_Microlenses"
+  url: "https://github.com/zk-pycode/FNLC_Bifocal_microlenses"
