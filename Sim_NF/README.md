@@ -2,4 +2,6 @@
 
 ## Support
 Currently hidden due to an NDA.
-/n For technical questions regarding this implementation, please refer to the associated publication or contact the corresponding authors.
+
+
+For technical questions regarding this implementation, please refer to the associated publication or contact the corresponding authors.
