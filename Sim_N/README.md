@@ -5,17 +5,22 @@
 This code simulates the orientational dynamics of a nematic liquid crystal (LC) confined inside a spherical-cap droplet sitting on a substrate. The director field is evolved (free energy minimization) using the Q-tensor Ginzburg-Landau model, discretised with a mixed finite element method on a tetrahedral mesh of the droplet volume. The simulation accounts for three Frank elastic constants (splay, twist, bend) mapped to the LdG framework, planar degenerate anchoring at the dome surface, and Rapini-Papoular anchoring at the polyamide substrate.
 
 ## Code Overview
-
-- `main_N.py` — entry point; loads parameters and calls `run_simulation`
-- `params_N.py` — all tunable settings (geometry, elastic constants, anchoring strengths, time-stepping, output)
-- `src/`
-  - `__init__.py`
-  - `solver.py` — `GinzburgLandauSolver` (weak form assembly, BDF1/BDF2 time stepping, energy logging) and `run_simulation` (full pipeline orchestration)
-  - `meshing.py` — `MeshHandler` (spherical-cap tetrahedral mesh via gmsh + prism→tet decomposition) and `FunctionSpaces` (5-component CG1 Q-tensor space)
-  - `initial_conditions.py` — `InitialConditions` (random, radial, or loaded from a previous simulation file)
-  - `boundary_conditions.py` — `BoundaryConditions` (hard Dirichlet BCs at the dome rim)
-  - `snes_problem.py` — `SNESProblem` (PETSc SNES callback wrapper for the monolithic Q-tensor system)
-  - `output_handler.py` — `OutputHandler` (XDMF director time-series and energy CSV)
+```bash
+N_LC2/
+├── main_N.py                   Entry point - loads parameters and calls run_simulation
+├── params_N.py                 All tunable settings (edit this file)
+├── README.md                   This file
+└── src/
+    ├── __init__.py
+    ├── solver.py               GinzburgLandauSolver (weak form, BDF1/BDF2 time stepping, energy logging)
+    │                           run_simulation (full pipeline orchestration)
+    ├── meshing.py              MeshHandler (spherical-cap tet mesh via gmsh + prism->tet decomposition)
+    │                           FunctionSpaces (5-component CG1 Q-tensor space)
+    ├── initial_conditions.py   InitialConditions (random, radial, or loaded from a previous file)
+    ├── boundary_conditions.py  BoundaryConditions (hard Dirichlet BCs at the dome rim)
+    ├── snes_problem.py         SNESProblem (PETSc SNES callback wrapper for the monolithic system)
+    └── output_handler.py       OutputHandler (XDMF director time-series and energy CSV)
+```
 
 ## Physics
 
@@ -94,13 +99,15 @@ Detailed installation instructions for DOLFINx can be found at [FEniCS/dolfinx](
 | `initial_condition_type` | `'random'`, `'radial'`, or `'from_file'` | `'random'` |
 
 ## Output
-
-When the simulation completes, the output directory (set by `params.output_dir`) will contain:
-
-- `simulation_n.xdmf` / `simulation_n.h5` — director field time-series (open in [ParaView](https://www.paraview.org/))
-- `mesh.xdmf` / `mesh.h5` — mesh geometry and boundary tags
-- `dynamic_log.csv` — time-series of total, elastic, dome, and base energies
-- `parameters.txt` — plain-text record of all simulation parameters used in this run
+```bash
+<output_dir>/
+├── simulation_n.xdmf           Director field time-series (open in ParaView)
+├── simulation_n.h5             HDF5 data store for the XDMF time-series
+├── mesh.xdmf                   Mesh geometry and boundary tags
+├── mesh.h5                     HDF5 data store for the mesh
+├── dynamic_log.csv             Time-series of total, elastic, dome, and base energies
+└── parameters.txt              Plain-text record of all simulation parameters used in this run
+```
 
 To visualise the director field in ParaView, open `simulation_n.xdmf` and apply a **Glyph** filter with the `Director` field.
 
