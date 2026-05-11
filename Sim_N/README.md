@@ -31,14 +31,17 @@ with the free energy functional
 F = integral_volume [
         L1/2 * |grad(Q)|**2
       + L2/2 * |div(Q)|**2
-      + L3/2 * Q[i,j,k] * Q[i,k,j]] dV
+      + L3/2 * Q[i,j,k] * Q[i,k,j]
+      ] dV
 
   + integral_dome [
-        C_surface/2 * (nu.T @ Q @ nu + S/3)**2] dS
+        C_surface/2 * (nu.T @ Q @ nu + S/3)**2
+      ] dS
 
   + integral_base [
         C_polyamide/2 * |Q - Q_s|**2
-      + C_surface/2  * (z.T @ Q @ z + S/3)**2] dS
+      + C_surface/2  * (z.T @ Q @ z + S/3)**2
+      ] dS
 ```
 
 The elastic constants L1, L2, L3 are derived from the measured Frank constants K1 (splay), K2 (twist), K3 (bend) via the standard LdG–Frank mapping at scalar order parameter S.
@@ -81,12 +84,12 @@ Detailed installation instructions for DOLFINx can be found at [FEniCS/dolfinx](
 |-----------|-------------|---------------|
 | `S` | Scalar nematic order parameter | `0.5` |
 | `K1, K2, K3` | Frank elastic constants (N) | `0.4–2 × 10⁻¹²` |
-| `C_surface` | Planar-degenerate anchoring strength on dome and base tilt (J/m²) | `1 × 10⁻⁸` |
-| `C_polyamide` | Base Rapini-Papoular anchoring toward rubbing direction (J/m²) | `2 × 10⁻⁸` |
+| `C_surface` | Planar-degenerate anchoring strength on dome and base tilt (J/m²) | `1 × 10⁻⁶` |
+| `C_polyamide` | Base Rapini-Papoular anchoring toward rubbing direction (J/m²) | `2 × 10⁻⁶` |
 | `base_radius` | Droplet base radius (m) | `127 × 10⁻⁶` |
 | `contact_angle_deg` | Static contact angle (degrees) | `20–30` |
 | `gamma_viscosity` | Rotational viscosity γ₁ (Pa·s) | `0.06` |
-| `dt` | Time step (s) | `0.5` |
+| `dt` | Time step (s) | `0.01` |
 | `initial_condition_type` | `'random'`, `'radial'`, or `'from_file'` | `'random'` |
 
 ## Output
@@ -102,4 +105,4 @@ To visualise the director field in ParaView, open `simulation_n.xdmf` and apply 
 
 ## Support
 
-For questions about this code, please contact the author.
+For questions about this code, please contact the authors of the publication.
