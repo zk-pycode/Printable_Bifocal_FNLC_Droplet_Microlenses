@@ -50,15 +50,16 @@ The elastic constants L1, L2, L3 are derived from the measured Frank constants K
 
 The code requires **DOLFINx v0.9.0** (FEniCSx) with PETSc compiled with MUMPS support, plus the following Python packages:
 
-| Package | Purpose |
-|---------|---------|
-| `dolfinx` v0.9.0 | FEM assembly and mesh distribution |
-| `gmsh` | 2D base-disk meshing |
-| `petsc4py` | SNES Newton solver |
-| `mpi4py` | MPI parallelism |
-| `numpy`, `scipy` | Numerics and mesh-to-mesh interpolation |
-| `h5py` | Reading previous simulation files (`from_file` IC) |
-| `progiter` | Progress reporting |
+| Package | Version | Purpose |
+|---------|---------|---------|
+| `dolfinx` | 0.9.0 | FEM assembly and mesh distribution |
+| `gmsh` | 4.15.0 | 2D base-disk meshing |
+| `petsc4py` | 3.24.0 | SNES Newton solver |
+| `mpi4py` | 4.1.1 | MPI parallelism |
+| `numpy` | 2.3.1 | Numerics and mesh-to-mesh interpolation |
+| `scipy` | 1.16.3 | Mesh-to-mesh interpolation |
+| `h5py` | 3.15.1 | Reading previous simulation files (`from_file` IC) |
+| `progiter` | 2.0.0 | Progress reporting |
 
 ### Installing DOLFINx
 
