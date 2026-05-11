@@ -1,4 +1,5 @@
 ## Printable Bifocal Microlenses from Ferroelectric Nematic Liquid Crystal Droplets
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20127570.svg)](https://doi.org/10.5281/zenodo.20127570)
 
 ### Project Description
 
