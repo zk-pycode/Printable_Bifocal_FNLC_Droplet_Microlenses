@@ -1,6 +1,6 @@
 ## Printable Bifocal Microlenses from Ferroelectric Nematic Liquid Crystal Droplets
 <a href="https://doi.org/10.5281/zenodo.20127570"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20127570.svg" alt="DOI"></a>
-<a href="https://doi.org/10.5281/zenodo.20127570"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20127570.svg" alt="DOI"></a>
+
 ### Project Description
 
 This project models the equilibrium director configurations of liquid crystal (LC) droplets across three material phases - **Nematic (N)**, **Intermediate-Phase (Nx or SmZa)**, and **Ferroelectric Nematic (FN)** - each implemented as a separate finite-element simulation module.
