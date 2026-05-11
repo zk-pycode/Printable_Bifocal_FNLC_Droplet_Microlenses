@@ -1,10 +1,10 @@
-#  Ginzburg-Landau Q-tensor Based Nematic Liquid Crystal Droplet Simulation 
+##  Ginzburg-Landau Q-tensor Based Nematic Liquid Crystal Droplet Simulation 
 
-## Introduction
+### Introduction
 
 This code simulates the orientational dynamics of a nematic liquid crystal (LC) confined inside a spherical-cap droplet sitting on a substrate. The director field is evolved (free energy minimization) using the Q-tensor, discretised with a mixed finite element method on a tetrahedral mesh of the droplet volume. The simulation accounts for three Frank elastic constants (splay, twist, bend) mapped to the LdG framework, planar degenerate anchoring at the dome surface, and Rapini-Papoular anchoring at the polyamide substrate.
 
-## Code Overview
+### Code Overview
 ```bash
 Sim_N/
 ├── main_N.py                   Entry point - loads parameters and calls run_simulation
@@ -22,7 +22,7 @@ Sim_N/
     └── output_handler.py       OutputHandler (XDMF director time-series and energy CSV)
 ```
 
-## Physics
+### Physics
 
 The Q-tensor obeys the Ginzburg-Landau relaxation equation
 
@@ -51,7 +51,7 @@ F = integral_volume [
 
 The elastic constants L1, L2, L3 are derived from the measured Frank constants K1 (splay), K2 (twist), K3 (bend) via the standard LdG–Frank mapping at scalar order parameter S.
 
-## Environment
+### Environment
 
 The code requires **DOLFINx v0.9.0** (FEniCSx) with PETSc compiled with MUMPS support, plus the following Python packages:
 
@@ -66,12 +66,12 @@ The code requires **DOLFINx v0.9.0** (FEniCSx) with PETSc compiled with MUMPS su
 | `h5py` | 3.15.1 | Reading previous simulation files (`from_file` IC) |
 | `progiter` | 2.0.0 | Progress reporting |
 
-### Installing DOLFINx
+#### Installing DOLFINx
 
 Detailed installation instructions for DOLFINx can be found at [FEniCS/dolfinx](https://github.com/FEniCS/dolfinx). The recommended approach on Linux is via conda.
 
 
-## Running the Simulation
+### Running the Simulation
 
 1. **Edit parameters** in `params_N.py` — set the droplet geometry, elastic constants, anchoring strengths, time step, and output directory.
 
@@ -84,7 +84,7 @@ Detailed installation instructions for DOLFINx can be found at [FEniCS/dolfinx](
 
 3. **Monitor progress** — the solver prints per-step SNES status, residual norm, and total energy to stdout. An energy time-series is also written to `<output_dir>/dynamic_log.csv`.
 
-## Key Parameters (`params_N.py`)
+### Key Parameters (`params_N.py`)
 
 | Parameter | Description | Typical value |
 |-----------|-------------|---------------|
@@ -98,7 +98,7 @@ Detailed installation instructions for DOLFINx can be found at [FEniCS/dolfinx](
 | `dt` | Time step (s) | `0.01` |
 | `initial_condition_type` | `'random'`, `'radial'`, or `'from_file'` | `'random'` |
 
-## Output
+### Output
 ```bash
 <output_dir>/
 ├── simulation_n.xdmf           Director field time-series (open in ParaView)
@@ -111,6 +111,6 @@ Detailed installation instructions for DOLFINx can be found at [FEniCS/dolfinx](
 
 To visualise the director field in ParaView, open `simulation_n.xdmf` and apply a **Glyph** filter with the `Director` field.
 
-## Support
+### Support
 
 For technical questions regarding this implementation, please refer to the associated publication or contact the corresponding authors.
