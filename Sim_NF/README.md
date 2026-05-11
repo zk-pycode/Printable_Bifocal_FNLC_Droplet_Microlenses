@@ -1,6 +1,6 @@
-# Ginzburg-Landau Based Ferroelectric Nematic Liquid Crystal Droplet Simulation
+## Ginzburg-Landau Based Ferroelectric Nematic Liquid Crystal Droplet Simulation
 
-## Support
+### Support
 Currently hidden due to an NDA.
 
 
