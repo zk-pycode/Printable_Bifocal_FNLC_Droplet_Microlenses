@@ -1,5 +1,4 @@
 ## JonesMatrix_POM
-
 Polarized Optical Microscopy (POM) image generator using layer-by-layer
 Jones matrix calculus on a 3-D liquid-crystal director field from a
 FEniCSx/DOLFINx finite-element simulation.
@@ -7,7 +6,6 @@ FEniCSx/DOLFINx finite-element simulation.
 ---
 
 ## How it works
-
 1. Reads a DOLFINx HDF5 checkpoint (simulation_P.h5) containing mesh
    coordinates and a 3-component director (or polarization) field.
 2. Builds sign-invariant Q-tensor interpolators so antiparallel director
@@ -38,7 +36,7 @@ JonesMatrix_POM/
     └── pom_generator.py  	Pipeline orchestrator (run_pom_pipeline)
 ```
 
-## Output (written in simulation directory)
+## Output
 ```bash ...
 <simulation_dir>/POM_output/
 ├── POM_images/
@@ -54,7 +52,6 @@ JonesMatrix_POM/
 ---
 
 ## Quick start
-
 1. Edit the simulation directory and optical parameters : nano params_JPOM.py
 2. Run : python main_JPOM.py
 
@@ -112,3 +109,6 @@ the missing substrate region.
 After Q-tensor eigendecomposition, adjacent layers may have flipped signs.
 A greedy walk flips each layer to match the hemisphere of the layer below,
 preserving the physical twist direction in the Jones product.
+
+## Support
+For technical questions regarding this implementation, please refer to the associated publication or contact the corresponding authors.
