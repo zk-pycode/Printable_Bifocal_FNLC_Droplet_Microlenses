@@ -2,7 +2,7 @@ cff-version: 1.1.0
 message: "If you use this software, please cite it as below."
 authors:
 - family-names: Zakaria
-  given-names: SIddiquee
+  given-names: Siddiquee
 - family-names: Jonathan
   given-names: Selinger
 - family-names: Antal
@@ -10,4 +10,4 @@ authors:
 orcid: https://orcid.org/0009-0005-5845-9484
 title: FNLC Bifocal Microlenses
 version: v.1.0.0
-date-released: 2026-05-11
+date-released: "2026-05-11"
