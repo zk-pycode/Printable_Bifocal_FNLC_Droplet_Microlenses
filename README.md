@@ -1,5 +1,4 @@
 ## Printable Bifocal Microlenses from Ferroelectric Nematic Liquid Crystal Droplets
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20127570.svg)](https://doi.org/10.5281/zenodo.20127570)
 
 ### Project Description
 
@@ -17,7 +16,7 @@ The simulated steady-state director textures from each phase are converted to sy
 
 ---
 
-### References
+### References [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20127570.svg)](https://doi.org/10.5281/zenodo.20127570)
 
 ```
 Siddiquee, Z., & Jákli, A. (2026). FNLC Bifocal Microlenses. In ACS Applied Materials & Interfaces (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20127570
