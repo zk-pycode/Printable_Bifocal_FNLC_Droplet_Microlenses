@@ -76,7 +76,7 @@ class SimulationParameters:
         #                   so dt ≪ 7 s keeps the BDF scheme well within stability.
         self.gamma_viscosity = 0.06         # Pa·s - rotational viscosity
         self.dt              = 0.5          # s     - time step
-        self.num_steps       = 10000         # total steps → t_final = 2500 s ≈ 3.5τ
+        self.num_steps       = 1000         # total steps → t_final = 2500 s ≈ 3.5τ
 
         ## SOLVER
 # SNES (Newton) convergence tolerances applied at each time step.
@@ -91,5 +91,5 @@ class SimulationParameters:
 
         ## OUTPUT
         # XDMF snapshots are written every output_every_n_steps time steps.
-        self.output_dir           = "Nematic_0001"
+        self.output_dir           = "Nematic_TEST"
         self.output_every_n_steps = 5       # save XDMF every N steps
