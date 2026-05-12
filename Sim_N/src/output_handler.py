@@ -216,3 +216,4 @@ class OutputHandler:
                 if self.comm.rank == 0:
                     print(f"ERROR closing director XDMF file: {e}")
         self.comm.Barrier()
+        
