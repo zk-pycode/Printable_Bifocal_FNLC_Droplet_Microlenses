@@ -278,7 +278,7 @@ class MeshHandler:
         # STAGE 5 - Distribute mesh (all ranks)
         # -----------------------------------------------------------------------
         domain    = basix.ufl.element("Lagrange", "tetrahedron", 1, shape=(3,))
-        self.mesh = _dolfinx_create_mesh(comm, tets, points_3d, domain)
+        self.mesh = _dolfinx_create_mesh(comm, tets, domain, points_3d)
         self.mesh.name = "Cap_Mesh"
 
         tdim = self.mesh.topology.dim
