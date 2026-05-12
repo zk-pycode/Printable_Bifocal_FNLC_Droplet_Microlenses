@@ -46,7 +46,7 @@ class SNESProblem:
         self._u   = u
         self._bcs = bcs
         # Pre-allocate once; reused every SNES iteration to avoid malloc overhead
-        self._b = dolfinx.fem.petsc.create_vector(self._F)
+        self._b = dolfinx.fem.petsc.create_vector(self._u.function_space)
         self._A = dolfinx.fem.petsc.create_matrix(self._J)
 
     @property
